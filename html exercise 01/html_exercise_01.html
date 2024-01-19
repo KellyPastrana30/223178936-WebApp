@@ -13,9 +13,36 @@
         <a href="contact">Contact</a>
     </nav>
 
-    <img src="Image/img_Paris.jpg" alt="" width="500" height="500"> 
+    <img src="Image/img_Paris.jpg" alt="" width="500" height="500">
 
-    
+    <h2>Forms</h2>
+    <form action="/submission_form" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username"  id="username" required>
+        <br>
+
+        <label for="passwrd">Password:</label>
+        <input type="password" name="passwrd" id="passwrd" minlength="8" required>
+        <br>
+
+        <label for="Gender">Gender:</label><br>
+        <input type="radio" name="Gender" id="male" value="male">
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" id="female" value="female">
+        <label for="Female">Female</label>
+        <br>
+
+        <!-- this section below is the line for the terms and conditions checkbox and submit button -->
+        
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I Accept the Terms and Conditions</label>
+
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+
 
     
 
