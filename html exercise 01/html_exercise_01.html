@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html_Exercise_01 Page</title>
+    <style>
+    table, th, td { 
+        border:1px solid black;
+    }
+    </style>
 </head>
 <body>
 
@@ -13,24 +18,25 @@
     
     
 
-    <head>
+    <header>
         <h2>Links:</h2>
-    </head>
+    </header>
 
     <!-- This section uses the navigation tag which lets you define a set of navigation links  -->
     <nav>
         <a href="home">Home</a>
-        <a href="about us">About Us</a>
+        <a href="aboutus">About Us</a>
         <a href="contact">Contact</a>
     </nav>
 
-    <head>
+    <header>
         <h2>Image</h2>
-    </head>
+    </header>
     
     
     <!-- This set of code gives an article tag which you could add statement or description. -->
     <article>
+        <h2>Picture of Paris</h2>
         <p>I chosen this image of Paris, because its breathtaking view never fails
             to amaze always.
         </p>
@@ -39,12 +45,12 @@
     <!-- This section of code used by the figure and figcaption which helps you describe your image, so even
     if the people can see the image, they know what you are talking about with the caption you have given. -->
     <figure>
-    <img src="Image/img_Paris.jpg" alt="" width="500" height="500">
+    <img src="/html_exercise_01/Image/img_Paris.jpg" alt="" width="500" height="500">
     <figcaption>Fig.1 Paris with Breathtaking Scenery</figcaption>
     </figure>
 
     
-    
+    <!-- This section of code is for Forms -->
     <h2>Forms</h2>
     <form action="/submission_form" method="post">
         <label for="username">Username:</label>
@@ -55,11 +61,13 @@
         <input type="password" name="passwrd" id="passwrd" minlength="8" required>
         <br>
 
-        <label for="Gender">Gender:</label><br>
+        <label>Gender:</label><br>
+        <!-- Male Part -->
         <input type="radio" name="Gender" id="male" value="male">
-        <label for="Male">Male</label>
+        <label for="male">Male</label>
+        <!-- Female Part -->
         <input type="radio" name="Gender" id="female" value="female">
-        <label for="Female">Female</label>
+        <label for="female">Female</label>
         <br>
 
         <!-- this section below is the line for the terms and conditions checkbox and submit button -->
@@ -75,12 +83,15 @@
     
 
     <!-- This section of code shows how I formatted the Table -->
-    <head>
-        <h2>Table</h2>
-    </head>
+    
+    
+
     
     <Section>
-        <table  style="width: 75%"  border="1">
+        <header>
+            <h2>Table</h2>
+        </header>
+        <table  style="width: 75%">
             <tr>
                 <th>Name</th>
                 <th>Age</th>
@@ -108,35 +119,14 @@
     </Section>
 
     
-    
-    <h2>Audio and Video</h2>
     <!-- Embeded audio and videos -->
-
     <br>
-
-    <head>
-        <h3>Audio</h3>
-    </head>
-
-    <section>
-        <audio controls>
-            <source src="https://pixabay.com/sound-effects/search/samples/" type="audio/mp3">
-        </audio>
-    <br>
-
-    <head>
-        <h3>Video</h3>
-    </head>
-        <video width="340" height="250" controls>
-            <source src="https://www.youtube.com/watch?v=kCnmGP8yD70&list=RDkCnmGP8yD70&start_radio=1" type="video/mp4">
-        </video>
-        
-        
-        <p>
-            Video Link From:
-            <a href="https://www.youtube.com/watch?v=kCnmGP8yD70&list=RDkCnmGP8yD70&start_radio=1" target="_blank"> Khalid Song</a>
-        </p>
-        
+    <section id="Audio-and-Video">
+        <h2>Audio and Video Play</h2>
+        <audio src="/html_exercise_01/html_audio_and_video/html_exercises_01-audio.mp3" controls></audio>
+        <br>
+        <video src="/html_exercise_01/html_audio_and_video/html_exercises_01-video.mp4" style="height: 350px;" controls></video>
+        <br>   
     </section>
     
     <Footer>

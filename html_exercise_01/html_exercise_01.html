@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html_Exercise_01 Page</title>
+</head>
+<body>
+
+<header>
+    <h2>Html_Exercise_01 Page</h2>
+</header>
+    
+    
+
+    <header>
+        <h2>Links:</h2>
+    </header>
+
+    <!-- This section uses the navigation tag which lets you define a set of navigation links  -->
+    <nav>
+        <a href="home">Home</a>
+        <a href="aboutus">About Us</a>
+        <a href="contact">Contact</a>
+    </nav>
+
+    <header>
+        <h2>Image</h2>
+    </header>
+    
+    
+    <!-- This set of code gives an article tag which you could add statement or description. -->
+    <article>
+        <h2>Picture of Paris</h2>
+        <p>I chosen this image of Paris, because its breathtaking view never fails
+            to amaze always.
+        </p>
+    </article>
+
+    <!-- This section of code used by the figure and figcaption which helps you describe your image, so even
+    if the people can see the image, they know what you are talking about with the caption you have given. -->
+    <figure>
+    <img src="Image/img_Paris.jpg" alt="" width="500" height="500">
+    <figcaption>Fig.1 Paris with Breathtaking Scenery</figcaption>
+    </figure>
+
+    
+    <!-- This section of code is for Forms -->
+    <h2>Forms</h2>
+    <form action="/submission_form" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username"  id="username" required>
+        <br>
+
+        <label for="passwrd">Password:</label>
+        <input type="password" name="passwrd" id="passwrd" minlength="8" required>
+        <br>
+
+        <label>Gender:</label><br>
+        <!-- Male Part -->
+        <input type="radio" name="Gender" id="male" value="male">
+        <label for="male">Male</label>
+        <!-- Female Part -->
+        <input type="radio" name="Gender" id="female" value="female">
+        <label for="female">Female</label>
+        <br>
+
+        <!-- this section below is the line for the terms and conditions checkbox and submit button -->
+        
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I Accept the Terms and Conditions</label>
+
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+    
+
+    <!-- This section of code shows how I formatted the Table -->
+    
+    
+
+    <style>
+    table, th, td { 
+        border:1px solid black;
+    }
+    </style>
+    <Section>
+        <header>
+            <h2>Table</h2>
+        </header>
+        <table  style="width: 75%">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+
+            <tr>
+                <td>Elmo</td>
+                <td>17</td>
+                <td>Manila City</td>
+            </tr>
+         
+            <tr>
+                <td>Barney</td>
+                <td>18</td>
+                <td>Pampanga City</td>
+            </tr>
+            
+            <tr>
+                <td>Curry</td>
+                <td>33</td>
+                <td>Quezon City</td>
+            </tr>
+        </table>
+    </Section>
+
+    
+    
+    <h2>Audio and Video</h2>
+    <!-- Embeded audio and videos -->
+
+    <br>
+
+    <section id="Audio and Video">
+        <h2>Audio and Video Play</h2>
+        <audio src="/html exercise 01/Html audio and video/Beautiful Sunrise .mp3" controls></audio>
+        <br>
+        <video src="/html exercise 01/Html audio and video/HTML Tutorial for Beginners.mp4" style="height: 350px;" controls></video>
+        <br>   
+    </section>
+    
+    <Footer>
+        <h3>Copyright Kelly Pastrana 2024</h3>
+    </Footer>
+
+    
+</body>
+</html>
