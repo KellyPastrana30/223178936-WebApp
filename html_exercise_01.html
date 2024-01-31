@@ -19,19 +19,26 @@
     
 
     <header>
-        <h2>Links:</h2>
+        <h2>Links</h2>
+        <li><a href="#" tabindex="1">Home</a></li>
+        <li><a href="#" tabindex="2">About Us</a></li>
+        <li><a href="#" tabindex="3">Contact</a></li>
     </header>
 
     <!-- This section uses the navigation tag which lets you define a set of navigation links  -->
     <nav>
-        <a href="home">Home</a>
-        <a href="aboutus">About Us</a>
-        <a href="contact">Contact</a>
+       <h2>Navigations</h2>
+        <li><a href="#Audio-and-Video" tabindex="4">Audio and Video</a></li>
+        <li><a href="#Table" tabindex="5">Table</a></li>
+        <li><a href="#Image" tabindex="6">Image</a></li>
+        <li><a href="#Forms" tabindex="7">Forms</a></li>
     </nav>
-
-    <header>
-        <h2>Image</h2>
-    </header>
+ 
+    <section id="Image">
+        <header>
+            <h2>Image</h2>
+        </header>
+    </section>
     
     
     <!-- This set of code gives an article tag which you could add statement or description. -->
@@ -42,43 +49,64 @@
         </p>
     </article>
 
+    <!-- Favorite Quote -->
+    <header>
+        <h2>Favorite Quote</h2>
+        <blockquote>
+            <p>Be the best version of yourself in anything you do. You don’t have to live anybody else’s story.</p>
+            <cite>By Stephen Curry</cite>
+        </blockquote>
+    </header>
+
     <!-- This section of code used by the figure and figcaption which helps you describe your image, so even
     if the people can see the image, they know what you are talking about with the caption you have given. -->
     <figure>
-    <img src="/html_exercise_01/Image/img_Paris.jpg" alt="" width="500" height="500">
+    <img src="/html_exercise_01/Image/img_Paris.jpg" alt="Paris with breathtaking view" width="500" height="500">
     <figcaption>Fig.1 Paris with Breathtaking Scenery</figcaption>
     </figure>
 
     
     <!-- This section of code is for Forms -->
-    <h2>Forms</h2>
-    <form action="/submission_form" method="post">
-        <label for="username">Username:</label>
-        <input type="text" name="username"  id="username" required>
+    
+    <section id="Forms" tabindex="8">
+        <h2>Forms</h2>
+        <form action="/submission_form" method="post">
+            <label for="username">Username:</label>
+            <input type="text" name="username"  id="username" required>
         <br>
 
-        <label for="passwrd">Password:</label>
-        <input type="password" name="passwrd" id="passwrd" minlength="8" required>
+            <label for="passwrd">Password:</label>
+            <input type="password" name="passwrd" id="passwrd" minlength="8"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"> required>
         <br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required>
+        <br>
+            <label for="date">Date:</label>
+            <input type="text" name="date" id="date" required>
+        <br>
+            <label for="number">Phone Number:</label>
+            <input type="text" name="number" id="number" minlength="11" required>
 
-        <label>Gender:</label><br>
+            <label>Gender:</label><br>
         <!-- Male Part -->
-        <input type="radio" name="Gender" id="male" value="male">
-        <label for="male">Male</label>
+            <input type="radio" name="Gender" id="male" value="male">
+            <label for="male">Male<abbr title="Male">(M)</abbr></label>
         <!-- Female Part -->
-        <input type="radio" name="Gender" id="female" value="female">
-        <label for="female">Female</label>
+            <input type="radio" name="Gender" id="female" value="female">
+            <label for="female">Female,<abbr title="Female">(F)</abbr></label>
         <br>
 
         <!-- this section below is the line for the terms and conditions checkbox and submit button -->
         
-        <input type="checkbox" id="terms" name="terms" required>
-        <label for="terms">I Accept the Terms and Conditions</label>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I Accept the Terms and Conditions</label>
 
         <br>
-        <input type="submit" value="Submit">
+            <input type="submit" value="Submit">
 
-    </form>
+        </form>
+    </section>
 
     
 
@@ -87,7 +115,7 @@
     
 
     
-    <Section>
+    <Section id="Table" tabindex="9">
         <header>
             <h2>Table</h2>
         </header>
@@ -121,7 +149,7 @@
     
     <!-- Embeded audio and videos -->
     <br>
-    <section id="Audio-and-Video">
+    <section id="Audio-and-Video" tabindex="10">
         <h2>Audio and Video Play</h2>
         <audio src="/html_exercise_01/html_audio_and_video/html_exercises_01-audio.mp3" controls></audio>
         <br>
@@ -129,6 +157,18 @@
         <br>   
     </section>
     
+    <!-- Iframes -->
+    <section id="Iframes">
+        <h2>Iframes</h2>
+        <p>Google Map of Paris, France</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.77844989297!2d2.2644620282842873!3d48.85893831295702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sph!4v1706709489608!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+    </section>
+
+    <!-- Embedded Content -->
+    <section id="Embedded Section">
+        <h2>Embedded Content</h2>
+        
+    </section>
     <Footer>
         <h3>Copyright Kelly Pastrana 2024</h3>
     </Footer>
