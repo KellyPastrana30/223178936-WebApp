@@ -1,0 +1,38 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:beige;
+    margin: 20px;
+    padding: 10px
+    ;
+}
+
+h1 {
+    font-family:'Courier New', Courier, monospace;
+    color:azure
+}
+
+h2 {
+    font-family:'Courier New', Courier, monospace;
+    color: beige;
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    color:beige
+}
+p {
+    font-family: 'Times New Roman', Times, serif
+    border: 1px solid #333;
+   color: aliceblue;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    color:hotpink;
+    transition: background-color 0.3s ease;
+    background-color: antiquewhite;
+    padding: 5px;
+    margin-bottom: 5px;
+}
